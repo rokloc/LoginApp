@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>ログイン</h1>
+	<p>テスト用一般ユーザー（test1/test1）</p>
+	<p>テスト用管理者ユーザー(admin/admin)</p>
+	<form method="post">
+		<label for username>ユーザー名</label>
+		<input type="text" name="username"><br>
+		<label for password>パスワード</label>
+		<input type="password" name="password">
+		<button type="submit">Login</button>
+	</form>	
+	<p th:if="${error}" th:text="${error}"></p>
+	<a href="/register">ユーザー登録</a>
+</body>
+</html>
